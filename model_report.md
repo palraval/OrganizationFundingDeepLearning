@@ -21,12 +21,12 @@ Alphabet Soup, a nonprofit organization, wants a Machine Learning model which wi
 
 * This model contains three layers and an output layer. The first layer has 100 neurons, 359 dimensions of features in the input, and a relu activation function. The second layer has 80 neurons and a sigmoid activation function. The third layer has 60 neurons and a sigmoid activation function. The output layer has a single neuron and a sigmoid activation function. The original model only had two layers with 80 and 30 neurons, respectively. The accuracy of the model was not very high, so another layer and more neurons were added to see if the model would be able to learn from the training data better. Instead of the relu activation function used in all the hidden layers, the sigmoid activation function is used to see if this better represents the data since this is a classification problem.  
 
-<img src = "images/model_build.png" width = "500" height = "200" />
+<img src = "images/model_build.png" width = "500" height = "300" />
 
 
 * The target model performance was set to be 75%. The accuracy of the optimized model on the test data ended up being 78%, which means the model was able to exceed the target model performance. 
 
-<img src = "images/model_accuracy.png" width = "500" height = "200" />
+<img src = "images/model_accuracy.png" width = "500" height = "300" />
 
 
 * The strategy to increase model performance was to adjust one parameter at a time. Firstly, instead of removing two variables from the features, only the 'EIN' column was removed. The number of epochs was increased from 100 to 125 to give the model more attempts to adjust the weights. Then, the neurons of only the first layer was increased. It was set from the original 80 neurons to 100 neurons. After this, the neurons in the second layer were increased from 30 neurons to 80 neurons. Next, a third hidden layer was added with 60 neurons. After all of this, the activation functions of the hidden layers were changed from relu to sigmoid.   
