@@ -26,7 +26,7 @@ Alphabet Soup, a nonprofit organization, wants a Machine Learning model which wi
 
 * The target model performance was set to be 75%. The accuracy of the optimized model on the test data ended up being 78%, which means the model was able to exceed the target model performance. 
 
-<img src = "images/model_accuracy.png" width = "500" height = "300" />
+<img src = "images/model_accuracy.png" width = "700" height = "300" />
 
 
 * The strategy to increase model performance was to adjust one parameter at a time. Firstly, instead of removing two variables from the features, only the 'EIN' column was removed. The number of epochs was increased from 100 to 125 to give the model more attempts to adjust the weights. Then, the neurons of only the first layer was increased. It was set from the original 80 neurons to 100 neurons. After this, the neurons in the second layer were increased from 30 neurons to 80 neurons. Next, a third hidden layer was added with 60 neurons. After all of this, the activation functions of the hidden layers were changed from relu to sigmoid.   
